@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:background="@color/lightBlue"
+    android:focusableInTouchMode="true"
+    tools:context="decom.android.activities.ContactListActivity2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:cacheColorHint="@color/lightBlue"
+        android:divider="#fff"
+        android:transcriptMode="alwaysScroll"
+        android:layout_alignParentLeft="true">
+
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/darkBlue"
+        android:onClick="goAddFriend"
+        app:srcCompat="@drawable/addfriend"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp" />
+
+
+</RelativeLayout>
+
+

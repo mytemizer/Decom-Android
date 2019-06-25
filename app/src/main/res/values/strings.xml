@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DECOM</string>
+    <string name="image_view_content_description">send image view</string>
+    <string name="their_message">How are you doing? This is a long message that should probably wrap.</string>
+    <string name="my_message">Placeholder message.</string>
+    <string name="default_sender_name">Rose</string>
+    <string name="title_activity_add_contact">Add Contact</string>
+    <string name="title_activity_add_group">Add Group</string>
+    <string name="add_group_title">Create Group</string>
+    <string name="ssl_error">Error while getting SSl</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="delete_contacts">Delete all contacts</string>
+    <string name="delete_chats">Delete all chats</string>
+    <string name="delete_messages">Delete all chat history</string>
+
+
+</resources>

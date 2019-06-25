@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:textColor="@color/darkBlue"
+        android:onClick="emptyChat"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_chats" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:textColor="@color/darkBlue"
+        android:layout_height="wrap_content"
+        android:onClick="emptyContact"
+        android:text="@string/delete_contacts" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:onClick="emptyMessages"
+        android:textColor="@color/darkBlue"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_messages" />
+</LinearLayout>

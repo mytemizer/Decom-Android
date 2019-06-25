@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="NOT_VALID">-1</integer>
+    <integer name="MY_TEXT">0</integer>
+    <integer name="THEIR_TEXT">1</integer>
+    <integer name="MY_IMAGE">2</integer>
+    <integer name="THEIR_IMAGE">3</integer>
+
+</resources>

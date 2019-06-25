@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="30dp"
+        android:onClick="changeProfilePhoto"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/a1"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/darkBlue"
+        android:layout_height="wrap_content"
+        android:text="User name" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/a2"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/darkBlue"
+        android:layout_height="wrap_content"
+        android:text="User ID" />
+
+    <TextView
+        android:id="@+id/profile_id"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/darkBlue"
+        android:layout_height="wrap_content"
+        android:text="Current IP" />
+
+    <TextView
+        android:id="@+id/profile_ip"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:onClick="changeUserName"
+        android:layout_height="wrap_content"
+        android:text="Change User Name"
+        android:textColor="@color/darkBlue" />
+
+
+</LinearLayout>

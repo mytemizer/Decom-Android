@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context="decom.android.activities.AddGroupActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:contentDescription="Add Group"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/add_group_list"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="56dp"
+            android:background="@color/darkBlue"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true">
+
+            <EditText
+                android:id="@+id/newGroupName"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@color/darkBlue"
+                android:ems="10"
+                android:hint="Enter Group Name"
+                android:textColorHint="#A8A8A8"
+                android:enabled="false"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/addGroupButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/plus"
+                android:onClick="addGroupToChatList"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

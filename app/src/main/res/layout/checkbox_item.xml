@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/checkbox_profile_image"
+        android:layout_width="106dp"
+        android:layout_height="72dp"
+        android:src="@drawable/decom"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="72dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_checkbox_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="Name"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/group_checkbox"
+        android:width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"/>
+
+
+</LinearLayout>

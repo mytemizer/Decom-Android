@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:background="@color/lightBlue"
+    android:focusableInTouchMode="true"
+    tools:context="decom.android.activities.ContactListActivity2">
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="3"-->
+        <!--android:background="@color/yusuf2"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/user_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="chat"-->
+            <!--android:gravity="left"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="25sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/device_ip"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:gravity="right"-->
+            <!--android:text="127.0.0.1"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp" />-->
+
+
+    <!--</RelativeLayout>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:cacheColorHint="@color/lightBlue"
+        android:divider="#fff"
+
+        android:transcriptMode="alwaysScroll">
+
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/darkBlue"
+        android:onClick="goAddGroup"
+        app:srcCompat="@drawable/new_chat"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp" />
+
+
+</RelativeLayout>
+
+

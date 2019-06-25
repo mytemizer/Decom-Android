@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="false"
+    tools:context=".activities.VideoShowActivity">
+
+    <!--android:text="@string/my_message"-->
+    <VideoView
+        android:id="@+id/myVideoMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/image_view_content_description"
+        android:elevation="2dp"
+        android:padding="5dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+
+</RelativeLayout>
